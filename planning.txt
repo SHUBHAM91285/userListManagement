@@ -1,0 +1,19 @@
+A user with role = admin.
+only one admin allowed.
+
+Model
+   - admin.js = contains all the data fields required to store admmin.
+   - user.js = contains data fields for user to be inserted in database by admin after importing it from csv file.
+
+Routes
+   - /admin/signup = send a post request to create an admin and to store data in database.
+   - /admin/login = send a post request to login the admin using email and password.
+   - /admin/add = send a post request to import csv file and add user in the database.
+
+Functionality
+   - Only one admin allowed, if trying to insert multiple user with admin role, will get a  message "only one admin is allowed"
+   - Once an admin signup or login to account a jwt token is created with expiry time.
+   - jwt token is used to verify admin for each routes he visits.
+   - do not need to enter email and password for every routes for verification as jwt token will be used to verify the routes.
+
+package.json - It contains all the dependencies required for the project.
