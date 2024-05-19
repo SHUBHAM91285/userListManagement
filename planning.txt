@@ -9,6 +9,8 @@ Routes
    - /admin/signup = send a post request to create an admin and to store data in database.
    - /admin/login = send a post request to login the admin using email and password.
    - /admin/add = send a post request to import csv file and add user in the database.
+   - /admin/admin = send a get request to get information about admin.
+   - /users = send a get request to get information about users.
 
 Functionality
    - Only one admin allowed, if trying to insert multiple user with admin role, will get a  message "only one admin is allowed"
